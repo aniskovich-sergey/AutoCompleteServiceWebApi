@@ -25,13 +25,20 @@ namespace AutoCompleteService.Modules.TreeSearch.Services
         {
             return Task.Run(() =>
             {
-                value = value.ToLower();
+               value = value.ToLower();
                 // находим узел, который начинается с value
                 var rootSubTree = TreeHelper.FindParentForNode(new Node(value), _tree.Root);
 
                 // Если корень поддерева совпадает с корнем дерева
                 // значит значение не найдено в словаре
                 if (rootSubTree == _tree.Root)
+                    return new string[] { };
+
+                // Если корень поддерева не начинается с введенного слова 
+                // и не один из детей не начинается с введенного слова
+                // значит не найдено слово в словаре
+                if (rootSubTree.Word != null && !rootSubTree.Word.StartsWith(value) 
+                    && !rootSubTree.Child.Any(x => x.Word.StartsWith(value)))
                     return new string[] { };
 
                 var startWith = new List<Node>();

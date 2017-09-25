@@ -28,7 +28,6 @@ namespace AutoCompleteService.Native.Controllers
             _autoComplateManagerBinarySearch = IoC.Container.ResolveNamed<IAutoCompleteService>("BinarySearch");
             _autoCompleteManagerTree = IoC.Container.ResolveNamed<IAutoCompleteService>("TreeSearch");
 
-            //_dataProvider = IoC.Container.Resolve<IDataProviderService>();
             _dataProvider = (IDataProviderService)serviceProvider.GetService(typeof(IDataProviderService));
 
             // Инициализация словарей

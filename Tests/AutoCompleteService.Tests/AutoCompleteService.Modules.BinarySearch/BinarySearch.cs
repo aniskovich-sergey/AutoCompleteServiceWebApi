@@ -61,5 +61,19 @@ namespace AutoCompleteService.Tests.AutoCompleteService.Modules.BinarySearch
             // Assert
             Assert.Equal(TestDataForSearch.ExpectedInput_aa.List, result.List);
         }
+
+        [Fact]
+        public async void InitDataInput_aaw()
+        {
+            // Arrange
+            var search = new BinarySearchAutoCompleteService();
+
+            // Act
+            await search.InitData(TestDataForSearch.Mock.Object);
+            var result = await search.GetAutoCompleteList("aaw");
+
+            // Assert
+            Assert.Empty(result.List);
+        }
     }
 }
