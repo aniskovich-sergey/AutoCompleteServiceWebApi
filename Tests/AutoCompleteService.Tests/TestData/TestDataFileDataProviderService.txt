@@ -1,0 +1,16 @@
+﻿10
+ac 5
+abc 1
+b 3
+ba 2
+bc 2
+a 2
+aa 3
+ab 4
+aabcd 5
+aabce 2
+4
+ac
+b
+dca
+aabc

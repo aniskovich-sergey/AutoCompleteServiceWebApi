@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170425-07" />
+    <PackageReference Include="Moq" Version="4.7.99" />
+    <PackageReference Include="xunit" Version="2.2.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\AutoCompleteService\AutoCompleteService.csproj" />
+    <ProjectReference Include="..\..\Services\AutoComplete\AutoCompleteService.Modules.BinarySearch\AutoCompleteService.Modules.BinarySearch.csproj" />
+    <ProjectReference Include="..\..\Services\AutoComplete\AutoCompleteService.Modules.FileDataProvider\AutoCompleteService.Modules.FileDataProvider.csproj" />
+    <ProjectReference Include="..\..\Services\AutoComplete\AutoCompleteService.Modules.LineSearch\AutoCompleteService.Modules.LineSearch.csproj" />
+    <ProjectReference Include="..\..\Services\AutoComplete\AutoCompleteService.Modules.TreeSearch\AutoCompleteService.Modules.TreeSearch.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="TestData\TestDataFileDataProviderService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

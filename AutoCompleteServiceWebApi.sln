@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{B7372E69-2442-498A-A37B-FDE687DFF240}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BBEAAB02-E40A-41D7-9D6C-701FC064851B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{73B62FB3-F692-4A27-B0A6-FAC01EBDA9C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{EA57C2C9-3070-48A8-B548-C38CC62D36F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{B7F0EB67-209A-4BAC-8F4D-4D564D033A2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AutoComplete", "AutoComplete", "{33194B42-5023-4CCF-A09E-C306843036EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCompleteService", "Common\AutoCompleteService\AutoCompleteService.csproj", "{27266FE0-B89C-48CE-AA58-6C2DD18F3E27}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCompleteService.Modules.BinarySearch", "Services\AutoComplete\AutoCompleteService.Modules.BinarySearch\AutoCompleteService.Modules.BinarySearch.csproj", "{4A80CA98-3B38-453D-813F-DA03D500908E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCompleteService.Modules.FileDataProvider", "Services\AutoComplete\AutoCompleteService.Modules.FileDataProvider\AutoCompleteService.Modules.FileDataProvider.csproj", "{11994271-29E7-4DDD-839D-287026CB6543}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCompleteService.Modules.LineSearch", "Services\AutoComplete\AutoCompleteService.Modules.LineSearch\AutoCompleteService.Modules.LineSearch.csproj", "{6A458CB0-7C1C-440A-A3EF-F07B0D4C5FFF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCompleteService.Modules.TreeSearch", "Services\AutoComplete\AutoCompleteService.Modules.TreeSearch\AutoCompleteService.Modules.TreeSearch.csproj", "{093B35B1-5802-4847-B398-46F26E1E9F69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCompleteService.Tests", "Tests\AutoCompleteService.Tests\AutoCompleteService.Tests.csproj", "{19522271-BEB8-44E5-8057-6A8CAFD030BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCompleteService.Native", "Web\Api\AutoCompleteService.Native\AutoCompleteService.Native.csproj", "{D98E573F-762B-440E-B050-F2729DD743E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27266FE0-B89C-48CE-AA58-6C2DD18F3E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27266FE0-B89C-48CE-AA58-6C2DD18F3E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27266FE0-B89C-48CE-AA58-6C2DD18F3E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27266FE0-B89C-48CE-AA58-6C2DD18F3E27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A80CA98-3B38-453D-813F-DA03D500908E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A80CA98-3B38-453D-813F-DA03D500908E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A80CA98-3B38-453D-813F-DA03D500908E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A80CA98-3B38-453D-813F-DA03D500908E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11994271-29E7-4DDD-839D-287026CB6543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11994271-29E7-4DDD-839D-287026CB6543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11994271-29E7-4DDD-839D-287026CB6543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11994271-29E7-4DDD-839D-287026CB6543}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A458CB0-7C1C-440A-A3EF-F07B0D4C5FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A458CB0-7C1C-440A-A3EF-F07B0D4C5FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A458CB0-7C1C-440A-A3EF-F07B0D4C5FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A458CB0-7C1C-440A-A3EF-F07B0D4C5FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093B35B1-5802-4847-B398-46F26E1E9F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093B35B1-5802-4847-B398-46F26E1E9F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093B35B1-5802-4847-B398-46F26E1E9F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093B35B1-5802-4847-B398-46F26E1E9F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19522271-BEB8-44E5-8057-6A8CAFD030BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19522271-BEB8-44E5-8057-6A8CAFD030BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19522271-BEB8-44E5-8057-6A8CAFD030BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19522271-BEB8-44E5-8057-6A8CAFD030BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D98E573F-762B-440E-B050-F2729DD743E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D98E573F-762B-440E-B050-F2729DD743E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D98E573F-762B-440E-B050-F2729DD743E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D98E573F-762B-440E-B050-F2729DD743E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA57C2C9-3070-48A8-B548-C38CC62D36F9} = {73B62FB3-F692-4A27-B0A6-FAC01EBDA9C0}
+		{33194B42-5023-4CCF-A09E-C306843036EB} = {B7372E69-2442-498A-A37B-FDE687DFF240}
+		{27266FE0-B89C-48CE-AA58-6C2DD18F3E27} = {B7F0EB67-209A-4BAC-8F4D-4D564D033A2E}
+		{4A80CA98-3B38-453D-813F-DA03D500908E} = {33194B42-5023-4CCF-A09E-C306843036EB}
+		{11994271-29E7-4DDD-839D-287026CB6543} = {33194B42-5023-4CCF-A09E-C306843036EB}
+		{6A458CB0-7C1C-440A-A3EF-F07B0D4C5FFF} = {33194B42-5023-4CCF-A09E-C306843036EB}
+		{093B35B1-5802-4847-B398-46F26E1E9F69} = {33194B42-5023-4CCF-A09E-C306843036EB}
+		{19522271-BEB8-44E5-8057-6A8CAFD030BD} = {BBEAAB02-E40A-41D7-9D6C-701FC064851B}
+		{D98E573F-762B-440E-B050-F2729DD743E3} = {EA57C2C9-3070-48A8-B548-C38CC62D36F9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {486E3E27-019B-4F72-B1C2-8538BD723151}
+	EndGlobalSection
+EndGlobal
